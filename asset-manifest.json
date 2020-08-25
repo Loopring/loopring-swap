@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/static/js/main.d0e067a2.chunk.js",
+    "main.js.map": "/static/js/main.d0e067a2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e7ef9fec.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e7ef9fec.js.map",
+    "static/css/2.d34346ea.chunk.css": "/static/css/2.d34346ea.chunk.css",
+    "static/js/2.ba226476.chunk.js": "/static/js/2.ba226476.chunk.js",
+    "static/js/2.ba226476.chunk.js.map": "/static/js/2.ba226476.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1fdc0efb50d94a5a0ae14a161a8593cd.js": "/precache-manifest.1fdc0efb50d94a5a0ae14a161a8593cd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d34346ea.chunk.css.map": "/static/css/2.d34346ea.chunk.css.map",
+    "static/js/2.ba226476.chunk.js.LICENSE.txt": "/static/js/2.ba226476.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/static/media/logo.22ea6816.png",
+    "static/media/nest.png": "/static/media/nest.6de5a91a.png",
+    "static/media/pnetwork.png": "/static/media/pnetwork.970c7ce6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7ef9fec.js",
+    "static/css/2.d34346ea.chunk.css",
+    "static/js/2.ba226476.chunk.js",
+    "static/js/main.d0e067a2.chunk.js"
+  ]
+}
