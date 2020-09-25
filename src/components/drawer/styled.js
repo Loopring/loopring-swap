@@ -3,7 +3,7 @@ import { Flex, Box } from "reflexbox";
 import styled from "styled-components";
 
 export const RootFlex = styled(Flex)`
-    width: 284px;
+    width: 272px;
     position: fixed;
     top: 0;
     bottom: 0;
