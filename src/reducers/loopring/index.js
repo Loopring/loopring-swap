@@ -16,16 +16,12 @@ import {
     POST_SWAP_END,
     LOGOUT,
     RESET_SWAP_DATA,
-    GET_AUTH_STATUS_START,
-    GET_AUTH_STATUS_END,
-    GET_AUTH_STATUS_SUCCESS,
 } from "../../actions/loopring";
 
 const initialState = {
     account: null,
     wallet: null,
     exchange: null,
-    authStatus: { loadings: 0, needsRegistration: null },
     supportedTokens: {
         loadings: 0,
         data: [],
@@ -203,33 +199,6 @@ export const loopringReducer = (state = initialState, action) => {
                 ...initialState,
                 supportedTokens: state.supportedTokens,
                 supportedMarkets: state.supportedMarkets,
-            };
-        }
-        case GET_AUTH_STATUS_START: {
-            return {
-                ...state,
-                authStatus: {
-                    ...state.authStatus,
-                    loadings: state.authStatus.loadings + 1,
-                },
-            };
-        }
-        case GET_AUTH_STATUS_END: {
-            return {
-                ...state,
-                authStatus: {
-                    ...state.authStatus,
-                    loadings: state.authStatus.loadings - 1,
-                },
-            };
-        }
-        case GET_AUTH_STATUS_SUCCESS: {
-            return {
-                ...state,
-                authStatus: {
-                    ...state.authStatus,
-                    needsRegistration: action.needsRegistration,
-                },
             };
         }
         default: {

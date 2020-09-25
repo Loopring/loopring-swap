@@ -7,8 +7,6 @@
     "drawer.wallet.connect.action.logout": "Logout",
     "drawer.wallet.connect.login": "Autenticati per iniziare a swappare.",
     "drawer.wallet.connect.logout": "Ti sei autenticato. Goditi la nostra esperienza di swapping non-custodial e dalle alte prestazioni.",
-    "drawer.wallet.connect.register": "Per favore, clicca il bottone qui sotto per registrarti a Loopring Swap.",
-    "drawer.wallet.connect.action.register": "Registrati",
     "drawer.wallet.connect.list.header.settings": "Impostazioni",
     "drawer.wallet.connect.list.header.lrc": "LRC",
     "drawer.wallet.connect.list.header.support": "Supporto",
@@ -58,6 +56,5 @@
     "error.swap.data": "Si è verificato un errore nel recuperare i dati relativi allo swap. Per favore riprova più tardi.",
     "error.swap.size": "Attualmente non c'è abbastanza liquidità per effettuare lo swap. Per favore riprova più tardi.",
     "error.swap": "Si è verificato un errore durante l'operazione di swap. Per favore riprova più tardi.",
-    "error.auth.status": "Si è verificato un errore nel verificare is tuo stato di autenticazione. Per favore riprova più tardi.",
-    "error.register": "Si è verificato un errore nella registrazione. Per favore riprova più tardi."
+    "error.auth.status": "Si è verificato un errore nel verificare is tuo stato di autenticazione. Per favore riprova più tardi."
 }

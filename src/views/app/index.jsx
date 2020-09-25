@@ -17,8 +17,6 @@ import {
     getUserBalances,
     getSupportedMarkets,
     logout,
-    getAuthStatus,
-    register,
 } from "../../actions/loopring";
 import { Flex, Box } from "reflexbox";
 import { Swapper } from "../swapper";
@@ -121,8 +119,6 @@ export const App = () => {
         web3Instance,
         chainId,
         selectedAccount: selectedWeb3Account,
-        needsRegistration,
-        authStatusLoading,
         loopringAccount,
         loopringWallet,
         supportedTokens,
@@ -132,8 +128,6 @@ export const App = () => {
         web3Instance: state.web3.instance,
         chainId: state.web3.chainId,
         selectedAccount: state.web3.selectedAccount,
-        needsRegistration: state.loopring.authStatus.needsRegistration,
-        authStatusLoading: !!state.loopring.authStatus.loadings,
         loopringAccount: state.loopring.account,
         loopringWallet: state.loopring.wallet,
         supportedTokens: state.loopring.supportedTokens.data,
@@ -189,12 +183,6 @@ export const App = () => {
         }
     }, [dispatch]);
 
-    useEffect(() => {
-        if (selectedWeb3Account) {
-            dispatch(getAuthStatus(selectedWeb3Account));
-        }
-    }, [selectedWeb3Account, dispatch]);
-
     const handleDrawerOpenClick = useCallback(() => {
         setDrawerOpen(true);
     }, []);
@@ -209,10 +197,6 @@ export const App = () => {
 
     const handleLogin = useCallback(() => {
         dispatch(login(web3Instance, selectedWeb3Account));
-    }, [dispatch, selectedWeb3Account, web3Instance]);
-
-    const handleRegister = useCallback(() => {
-        dispatch(register(web3Instance, selectedWeb3Account));
     }, [dispatch, selectedWeb3Account, web3Instance]);
 
     const handleLogout = useCallback(() => {
@@ -277,9 +261,6 @@ export const App = () => {
                     onConnectWallet={handleConnectWallet}
                     selectedWeb3Account={selectedWeb3Account}
                     onLogin={handleLogin}
-                    onRegister={handleRegister}
-                    needsRegistration={needsRegistration}
-                    loadingAuthStatus={authStatusLoading}
                     onLogout={handleLogout}
                     loggedIn={!!loopringAccount}
                     darkTheme={!lightTheme}
