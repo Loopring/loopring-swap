@@ -36,7 +36,9 @@ export const login = (web3Instance, selectedWeb3Account) => async (
         try {
             account = await lightconeGetAccount(selectedWeb3Account);
         } catch (error) {
-            toast.warn(<FormattedMessage id="warn.account.not.found" />);
+            toast.warn(<FormattedMessage id="warn.account.not.found" />, {
+                onClick: window.open("https://loopring.io")
+            });
             console.warn("account not found");
             return;
         }

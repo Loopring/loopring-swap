@@ -7,6 +7,8 @@
     "drawer.wallet.connect.action.logout": "Logout",
     "drawer.wallet.connect.login": "Autenticati per iniziare a swappare.",
     "drawer.wallet.connect.logout": "Ti sei autenticato. Goditi la nostra esperienza di swapping non-custodial e dalle alte prestazioni.",
+    "drawer.wallet.connect.register": "Per favore, clicca il bottone qui sotto per registrarti a Loopring Swap.",
+    "drawer.wallet.connect.action.register": "Registrati",
     "drawer.wallet.connect.list.header.settings": "Impostazioni",
     "drawer.wallet.connect.list.header.lrc": "LRC",
     "drawer.wallet.connect.list.header.support": "Supporto",
@@ -47,7 +49,7 @@
     "invalid.chain.id.message": "La rete Ethereum non è valida. È richiesto essere su {chainName}",
 
     "success.register": "La transazione di registrazione è stata correttamente trasmessa. Una volta confermata, in alcuni minuti, potrai utilizzare Loopring Swap.",
-    "warn.account.not.found": "Sembra che questo account non sia ancora sulla nostra piattaforma. Per favore, registrati.",
+    "warn.account.not.found": "Sembra che questo account non sia ancora sulla nostra piattaforma. sRegistrati su https://loopring.io",
     "warn.register.existing.account": "Sembra che tu possegga già un account Loopring.",
     "error.login": "Si è verificato un errore durante l'autenticatione. Per favore riprova più tardi.",
     "error.supported.tokens": "Si è verificato un errore nel recuperare i token supportati. Per favore riprova più tardi.",
@@ -56,5 +58,6 @@
     "error.swap.data": "Si è verificato un errore nel recuperare i dati relativi allo swap. Per favore riprova più tardi.",
     "error.swap.size": "Attualmente non c'è abbastanza liquidità per effettuare lo swap. Per favore riprova più tardi.",
     "error.swap": "Si è verificato un errore durante l'operazione di swap. Per favore riprova più tardi.",
-    "error.auth.status": "Si è verificato un errore nel verificare is tuo stato di autenticazione. Per favore riprova più tardi."
+    "error.auth.status": "Si è verificato un errore nel verificare is tuo stato di autenticazione. Per favore riprova più tardi.",
+    "error.register": "Si è verificato un errore nella registrazione. Per favore riprova più tardi."
 }
